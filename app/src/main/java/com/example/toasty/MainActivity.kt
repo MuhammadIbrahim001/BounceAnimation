@@ -32,8 +32,8 @@ class MainActivity : AppCompatActivity() {
             mBinding.mtrlCardChecked.visibility= View.VISIBLE
            mBinding.progressBar.visibility=View.VISIBLE
            mBinding.mtrlCardChecked.startAnimation(AnimationUtils.loadAnimation(this, R.anim.animation))
-           viewModel.timer(1500L)
-           mBinding.progressBar.max=15*1
+           viewModel.timer(15000L)
+           mBinding.progressBar.max=15*10
         }
 
     }

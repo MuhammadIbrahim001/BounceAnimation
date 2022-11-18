@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android"
-    android:fillAfter="true"
-    android:interpolator="@android:anim/bounce_interpolator">
-
+    android:fillAfter="true">
     <scale
+        android:duration="350"
+        android:fromXScale="0.0"
+        android:fromYScale="0.5"
         android:pivotX="100%"
         android:pivotY="50%"
-        android:fromXScale="0.0"
         android:toXScale="1.0"
-        android:fromYScale="0.5"
-        android:toYScale="1.0"
-        android:duration="500"/>
+        android:toYScale="1.0" />
+    <translate
+        android:duration="175"
+        android:fromXDelta="0%"
+        android:repeatCount="5"
+        android:repeatMode="reverse"
+        android:toXDelta="7%" />
 </set>
